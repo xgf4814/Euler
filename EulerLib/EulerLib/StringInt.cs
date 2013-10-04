@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EulerLib
 {
-    class StringInt
+    public class StringInt
     {
 
         public static string Multiply(string a, string b)
@@ -18,12 +18,31 @@ namespace EulerLib
 
 
             // We're only going to support multiplying by two for now
-            return ShiftLeft( (Int64.Parse(a) == 2 ? a : b ));
+            return ShiftLeft( (Int64.Parse(a) == 2 ? b : a ));
         }
 
         public static string ShiftLeft(string a)
         {
-            return " ";
+            return Add(a, a);
+        }
+
+        public static string ShiftLeft(string a, int count)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                a = ShiftLeft(a);
+            }
+            return a;
+        }
+
+        public static long SumDigits(string a)
+        {
+            long sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                sum += Int64.Parse(a.Substring(i,1));
+            }
+            return sum;
         }
 
         public static string Add(string a, string b)
