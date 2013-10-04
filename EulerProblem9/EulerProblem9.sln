@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerProblem9", "EulerProblem9\EulerProblem9.csproj", "{890D6C2D-3175-452B-8DAD-A5924B864CB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{890D6C2D-3175-452B-8DAD-A5924B864CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{890D6C2D-3175-452B-8DAD-A5924B864CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{890D6C2D-3175-452B-8DAD-A5924B864CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{890D6C2D-3175-452B-8DAD-A5924B864CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
