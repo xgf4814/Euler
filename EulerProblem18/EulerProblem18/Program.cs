@@ -13,7 +13,6 @@ namespace EulerProblem18
         {
 
             List<string> input = new List<string>();
-
             int counter = 0;
             string line;
 
@@ -22,35 +21,27 @@ namespace EulerProblem18
                new System.IO.StreamReader(args[0]);
             while ((line = file.ReadLine()) != null)
             {
-                Console.WriteLine(line);
                 input.Add(line);
                 counter++;
             }
-
             file.Close();
 
-            Console.WriteLine();
-
             int[][] triangle = new int[input.Count][];
-            int i = 0;
-            foreach (string s in input)
+            for (int i = 0; i < input.Count; i++)
             {
-                Console.WriteLine(i + ": " + s);
                 triangle[i] = input[i].Split(' ').Select(p => int.Parse(p)).ToArray();
-                i++;
             }
 
-            Console.WriteLine();
-
-            foreach(int[] xx in triangle)
+            for (int i = triangle.Length-2; i >= 0; i--)
             {
-                foreach (int x in xx)
+                for (int k = 0; k < triangle[i].Length; k++)
                 {
-                    Console.Write(x + " ");
+                    triangle[i][k] += triangle[i + 1][k] > triangle[i + 1][k + 1] ? triangle[i + 1][k] : triangle[i + 1][k + 1];
                 }
-                Console.WriteLine();
             }
-            
+
+            Console.WriteLine(triangle[0][0]);
+
         }
     }
 }
