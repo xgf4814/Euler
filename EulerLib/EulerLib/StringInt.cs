@@ -11,14 +11,12 @@ namespace EulerLib
 
         public static string Multiply(string a, string b)
         {
-            if (Int64.Parse(a) != 2 && Int64.Parse(b) != 2)
+            string product = "0";
+            for (long i = 0; i < Int64.Parse(b); i++)
             {
-                throw new NotImplementedException();
+                product = Add(product, a);
             }
-
-
-            // We're only going to support multiplying by two for now
-            return ShiftLeft( (Int64.Parse(a) == 2 ? b : a ));
+            return product;
         }
 
         public static string ShiftLeft(string a)
