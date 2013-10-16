@@ -9,6 +9,17 @@ namespace EulerLib
     public class XMath
     {
 
+        public static int Factorial(int n)
+        {
+            int product = 1;
+            for (int i = n; i > 0; i--)
+            {
+                product *= i;
+            }
+            //Console.WriteLine("Factorial(" + n + ") = " + product);
+            return product;
+        }
+
         public enum SumType { defecient, perfect, abundant };
 
         public static bool IsAbundant(int n)
