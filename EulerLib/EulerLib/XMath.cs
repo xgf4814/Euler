@@ -8,6 +8,37 @@ namespace EulerLib
 {
     public class XMath
     {
+
+        public enum SumType { defecient, perfect, abundant };
+
+        public static bool IsAbundant(int n)
+        {
+            return (SumOfProperDivisorsType(n) == SumType.abundant);
+        }
+
+        public static SumType SumOfProperDivisorsType(int n)
+        {
+            int sum = SumOfProperDivisors(n);
+
+            if (sum > n)
+                return SumType.abundant;
+            else if (sum < n)
+                return SumType.defecient;
+            else
+                return SumType.perfect;
+
+        }
+
+        public static int SumOfProperDivisors(int n)
+        {
+            int sum = 0;
+
+            foreach (int i in ProperDivisors(n))
+                sum += i;
+
+            return sum;
+        }
+
         public static List<int> ProperDivisors(int n)
         {
 
@@ -24,18 +55,21 @@ namespace EulerLib
 
             int intsqrt = (int)Math.Sqrt(n);
 
-            for (int i = 2; i < intsqrt; i++)
+            for (int i = 2; i <= intsqrt; i++)
             {
                 if (n % i == 0)
                 {
                     divisors.Add(i);
-                    divisors.Add(n / i);
+                    if (i != (n / i))
+                    {
+                        divisors.Add(n / i);
+                    }
                 }
             }
 
             // square root case
-            if (n % intsqrt == 0)
-                divisors.Add(intsqrt);
+            //if (n % intsqrt == 0)
+            //  divisors.Add(intsqrt);
 
             return divisors;
         }
