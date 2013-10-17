@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerProblem25", "EulerProblem25\EulerProblem25.csproj", "{A870A84E-84A3-4DB7-B03A-91B814843F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerLib", "..\EulerLib\EulerLib\EulerLib.csproj", "{2AD556BA-A932-4CB2-BD29-B5C9D9444783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerProblem2", "..\EulerProblem2\EulerProblem2\EulerProblem2.csproj", "{8E310CC7-A57A-4F26-A595-699BD15C5944}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A870A84E-84A3-4DB7-B03A-91B814843F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A870A84E-84A3-4DB7-B03A-91B814843F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A870A84E-84A3-4DB7-B03A-91B814843F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A870A84E-84A3-4DB7-B03A-91B814843F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD556BA-A932-4CB2-BD29-B5C9D9444783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD556BA-A932-4CB2-BD29-B5C9D9444783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD556BA-A932-4CB2-BD29-B5C9D9444783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD556BA-A932-4CB2-BD29-B5C9D9444783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E310CC7-A57A-4F26-A595-699BD15C5944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E310CC7-A57A-4F26-A595-699BD15C5944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E310CC7-A57A-4F26-A595-699BD15C5944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E310CC7-A57A-4F26-A595-699BD15C5944}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
