@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EulerProblem10
 {
-    class Program
+    class PrimeSummation
     {
         static void Main(string[] args)
         {

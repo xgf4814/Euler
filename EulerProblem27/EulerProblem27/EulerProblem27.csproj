@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{69F90E34-C0FE-46AE-946A-2841EF40B3EA}</ProjectGuid>
+    <ProjectGuid>{ABCA006C-7F65-4ABC-90FC-BBB4A2A6A9D0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EulerProblem7</RootNamespace>
-    <AssemblyName>EulerProblem7</AssemblyName>
+    <RootNamespace>EulerProblem27</RootNamespace>
+    <AssemblyName>EulerProblem27</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Prime10001.cs" />
+    <Compile Include="QuadraticPrimes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EulerLib\EulerLib\EulerLib.csproj">
+      <Project>{2ad556ba-a932-4cb2-bd29-b5c9d9444783}</Project>
+      <Name>EulerLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
