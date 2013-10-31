@@ -128,5 +128,87 @@ namespace EulerLib
 
             return divisors;
         }
+
+        public struct Power : IComparable<Power>
+        {
+            // x ^ y
+            private int _x;
+            private int _y;
+            private bool _dupe;
+
+            public int x { get { return _x; } set { _x = value; } }
+            public int y { get { return _y; } set { _y = value; } }
+            public bool dupe { get { return _dupe; } set { _dupe = value; } }
+
+            public Power(int xx, int yy)
+            {
+                _x = xx;
+                _y = yy;
+                _dupe = false;
+            }
+
+            public Power(int xx, int yy, bool ddupe)
+            {
+                _x = xx;
+                _y = yy;
+                _dupe = ddupe;
+            }
+
+            public override bool Equals(object obj)
+            {
+                return Equals(obj, this);
+            }
+
+            public bool Equals(Power P)
+            {
+                return ((this.x == P.x) && (this.y == P.y));
+            }
+
+            public int CompareTo(Power P)
+            {
+                if (P.Equals(this))
+                {
+                    return 0;
+                }
+                else if (P.Evaluate() > this.Evaluate())
+                {
+                    return -1;
+                }
+                else //if (P.Evaluate() < this.Evaluate())
+                {
+                    return 1;
+                }
+            }
+
+            public override int GetHashCode()
+            {
+                return base.GetHashCode();
+            }
+
+            public static bool operator ==(Power P1, Power P2)
+            {
+                return P1.Equals(P2);
+                //((P1.x == P2.x) && (P1.y == P2.y));
+            }
+
+            public static bool operator !=(Power P1, Power P2)
+            {
+                return !P1.Equals(P2);
+                //((P1.x != P2.x) || (P1.y != P2.y));
+            }
+
+            public override string ToString()
+            {
+                string s = _x.ToString() + "^" + _y.ToString();
+                return s;
+            }
+
+            public double Evaluate()
+            {
+                return Math.Pow((double)_x, (double)_y);
+            }
+
+        }
+
     }
 }

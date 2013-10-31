@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace EulerProblem15
 {
@@ -22,7 +23,10 @@ namespace EulerProblem15
 
         static void Main(string[] args)
         {
+            Stopwatch timer = Stopwatch.StartNew();
             Program p = new Program(Int32.Parse(args[0]));
+            TimeSpan elapsed = timer.Elapsed;
+            Console.WriteLine("Elapsed Time: {0}", elapsed);
         }
         
         void ArrayAlgorithm()

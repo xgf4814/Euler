@@ -9,6 +9,16 @@ namespace EulerLib
     public class StringInt
     {
 
+        public static string Power(int a, int b)
+        {
+            string sa = a.ToString();
+            for (int i = 1; i < b; i++)
+            {
+                sa = Multiply(sa, sa);
+            }
+            return sa;
+        }
+
         public static string Multiply(string a, string b)
         {
             string product = "0";
