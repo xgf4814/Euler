@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerProblem30", "EulerProblem30\EulerProblem30.csproj", "{0CBC4389-4386-4A63-B3AB-2C540DB0B627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EulerLib", "..\EulerLib\EulerLib\EulerLib.csproj", "{2AD556BA-A932-4CB2-BD29-B5C9D9444783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CBC4389-4386-4A63-B3AB-2C540DB0B627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CBC4389-4386-4A63-B3AB-2C540DB0B627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CBC4389-4386-4A63-B3AB-2C540DB0B627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CBC4389-4386-4A63-B3AB-2C540DB0B627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AD556BA-A932-4CB2-BD29-B5C9D9444783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD556BA-A932-4CB2-BD29-B5C9D9444783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD556BA-A932-4CB2-BD29-B5C9D9444783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD556BA-A932-4CB2-BD29-B5C9D9444783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
