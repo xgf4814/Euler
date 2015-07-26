@@ -17,11 +17,11 @@ def main():
     if (x % 3 == 0) or (x % 5 == 0):
       foo.append(x)
       
-  sum = 0
+  result = 0
   for y in foo:
-    sum += y
+    result += y
     
-  print(sum)
+  print(result)
 
 # This is the standard boilerplate that calls the main() function.
 if __name__ == '__main__':
