@@ -1,7 +1,7 @@
 #!/usr/bin/python -tt
 
 """
-Project Euler: Problem 3
+Project Euler: Problem 4
 """
 
 import sys
